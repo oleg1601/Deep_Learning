@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    {% block title %}Home{% endblock %}
+</head>
+<body>
+    {% block content %}
+        <div class="jumbotron">
+            <h1 class="display-4">News Project app</h1>
+            <p class="lead">A News website built with Django.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button"> View All Articles</a>
+        </p>
+        </div>
+    {% endblock %}
+</body>
+</html>
